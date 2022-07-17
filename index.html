@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="recipe, food, health">
+  <title>Good Food Mood</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href ="CSS/styles.css">
+</head>
+<body>
+ <div class="header">
+    <div class="logo">
+        <a href=index.html><img src=""alt="foodie logo"></a>
+    </div>
+    <label class= "hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type= "checkbox" id="hamburger-menu">
+    <nav>
+        <ul>
+            <li><a href="index.html"class="current">Search recipes</a></li>
+            <li><a href="ourstory.html">Our Story</a> </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="tip.html">Our tip</a></li>
+         </ul>
+     </nav>
+  </div>
+  <section class="foods">
+    <div class="links"><a href="tip1.html">
+       <h3>Chicken</h3>
+       <img src="pics/chicken.jpeg" alt ="chicken recipe"></a>
+   </div>
+   <div class="links"><a href="tip2.html">
+       <h3>Beef</h3>
+       <img src="pics/beef.jpeg" alt ="beef recipe"></a>
+   </div>
+   <div class="links"><a href="tip3.html">
+       <h3>Pork</h3>
+       <img src="pics/pork.jpeg" alt ="pork recipe"></a>
+   </div>
+</section>
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">What do you have in your fridge?</h2>
+        <blockquote>There is nothing good to eat here</blockquote>
+          <cite>- Perhaps you as well?</cite>
+        
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal"></div>
+        <div class = "meal-details">
+            <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+              <i class = "fas fa-times"></i>
+            </button>
+            <div class = "meal-details-content">
+            </div>
+          </div>
+        
+      </div>
+
+
+   
+    </div>
+  </div>
+  <footer>
+   <p>Keep us in your mind</p>
+  </footer>
+  <script src= "JS/carousel.js"></script>
+  <script src = "JS/api.js"></script>
+ 
+</body>
+</html>
